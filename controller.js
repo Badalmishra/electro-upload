@@ -1,9 +1,13 @@
 const fs = require("fs");
 const handleUpload = (req, res) => {
   try {
+    const directoryName = 'uploads'
+    if(!fs.existsSync(directoryName)){
+      fs.mkdirSync(directoryName);
+    }
     const fileName = req.headers["file-name"];
     req.on("data", (chunk) => {
-      fs.appendFileSync(fileName, chunk);
+      fs.appendFileSync(directoryName+'/'+fileName, chunk);
       console.log(`received chunk! ${chunk.length}`);
     });
     res.end("uploaded!");
