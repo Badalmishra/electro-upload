@@ -4,6 +4,7 @@
   "description": "Server to handle resumeable file uploads.",
   "main": "index.js",
   "scripts": {
+    "start" : "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
