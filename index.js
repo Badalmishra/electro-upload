@@ -1,5 +1,4 @@
 const http = require("http");
-const fs = require("fs");
 const { router } = require("./SimpleRouter");
 const httpServer = http.createServer();
 /** Config Variables */

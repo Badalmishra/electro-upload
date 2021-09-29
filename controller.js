@@ -1,3 +1,4 @@
+const fs = require("fs");
 const handleUpload = (req, res) => {
   try {
     const fileName = req.headers["file-name"];

@@ -1,14 +1,15 @@
-const { handleUpload } = require("./controller");
+const { handleUpload, handleNotFound } = require("./controller");
 
-const router = (req) => {
+const router = (req, res) => {
   const { url } = req;
   switch (url) {
-    case "/upload": {
-      handleUpload(req);
-    }
-    break
-    default:{
-        handleNotFound()
+    case "/upload":
+      {
+        handleUpload(req, res);
+      }
+      break;
+    default: {
+      handleNotFound(req, res);
     }
   }
 };
