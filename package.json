@@ -1,0 +1,24 @@
+{
+  "name": "electro-upload",
+  "version": "1.0.0",
+  "description": "Server to handle resumeable file uploads.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Badalmishra/electro-upload.git"
+  },
+  "keywords": [
+    "upload",
+    "file",
+    "node"
+  ],
+  "author": "Badal Mishra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Badalmishra/electro-upload/issues"
+  },
+  "homepage": "https://github.com/Badalmishra/electro-upload#readme"
+}
